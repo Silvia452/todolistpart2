@@ -102,3 +102,18 @@ public class EquipoTest {
         assertThat(usuario.getEquipos()).hasSize(1);
         assertThat(usuario.getEquipos()).contains(equipo);
     }
+
+    @Test
+    @Transactional
+    public void comprobarFindAll() {
+        // GIVEN
+        // Dos equipos en la base de datos
+        equipoRepository.save(new Equipo("Proyecto Cobalto"));
+        equipoRepository.save(new Equipo("Proyecto Níquel"));
+
+        // WHEN
+        List<Equipo> equipos = equipoRepository.findAll();
+
+        // THEN
+        assertThat(equipos).hasSize(2);
+    }
