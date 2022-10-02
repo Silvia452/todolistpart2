@@ -1,0 +1,17 @@
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/service/UsuarioServiceException.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/controller/LoginController.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/controller/RegistroData.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/controller/exception/TareaNotFoundException.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/model/TareaRepository.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/service/TareaServiceException.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/controller/LoginData.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/controller/exception/UsuarioNoLogeadoException.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/Application.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/controller/TareaData.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/service/UsuarioService.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/model/UsuarioRepository.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/authentication/ManagerUserSession.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/controller/TareaController.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/service/TareaService.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/model/Tarea.java
+/Users/Sally/Documents/GitHub/todolistpart2/src/main/java/madstodolist/model/Usuario.java
