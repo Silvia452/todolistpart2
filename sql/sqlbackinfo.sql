@@ -11,7 +11,7 @@ CREATE TABLE public.equipo_usuario (
 );
 
 
-ALTER TABLE public.equipo_usuario OWNER TO mads;
+
 
 
 CREATE TABLE public.equipos (
@@ -21,18 +21,15 @@ CREATE TABLE public.equipos (
 );
 
 
-ALTER TABLE public.equipos OWNER TO mads;
-
 
 
 CREATE SEQUENCE public.equipos_id_seq
     START WITH 1
-    INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE;
 
 
-ALTER TABLE public.equipos_id_seq OWNER TO mads;
+
 
 
 ALTER SEQUENCE public.equipos_id_seq OWNED BY public.equipos.id;
@@ -45,18 +42,13 @@ CREATE TABLE public.tareas (
                                usuario_id bigint NOT NULL
 );
 
-
-ALTER TABLE public.tareas OWNER TO mads;
-
-
 CREATE SEQUENCE public.tareas_id_seq
     START WITH 1
-    INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE;
 
 
-ALTER TABLE public.tareas_id_seq OWNER TO mads;
+
 
 ALTER SEQUENCE public.tareas_id_seq OWNED BY public.tareas.id;
 
@@ -70,32 +62,27 @@ CREATE TABLE public.usuarios (
 );
 
 
-ALTER TABLE public.usuarios OWNER TO mads;
+
 
 
 CREATE SEQUENCE public.usuarios_id_seq
     START WITH 1
-    INCREMENT BY 1
     NO MINVALUE
     NO MAXVALUE;
 
-
-ALTER TABLE public.usuarios_id_seq OWNER TO mads;
 
 
 ALTER SEQUENCE public.usuarios_id_seq OWNED BY public.usuarios.id;
 
 
 
-ALTER TABLE ONLY public.equipos ALTER COLUMN id SET DEFAULT nextval('public.equipos_id_seq'::regclass);
+ALTER TABLE ONLY public.equipos ALTER COLUMN id SET DEFAULT nextval('public.equipos_id_seq');
 
 
 
-ALTER TABLE ONLY public.tareas ALTER COLUMN id SET DEFAULT nextval('public.tareas_id_seq'::regclass);
+ALTER TABLE ONLY public.tareas ALTER COLUMN id SET DEFAULT nextval('public.tareas_id_seq');
 
 
 
-ALTER TABLE ONLY public.usuarios ALTER COLUMN id SET DEFAULT nextval('public.usuarios_id_seq'::regclass);
-
-
+ALTER TABLE ONLY public.usuarios ALTER COLUMN id SET DEFAULT nextval('public.usuarios_id_seq');
 
