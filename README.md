@@ -2,11 +2,9 @@
 
 Aplicación ToDoList con Spring Boot y plantillas Thymeleaf.
 
-## Requisitos
+## Link al repositorio:
 
-Necesitas tener instalado en tu sistema:
-
-- Java 8
+https://github.com/Silvia452/todolistpart2
 
 ## Ejecución
 
