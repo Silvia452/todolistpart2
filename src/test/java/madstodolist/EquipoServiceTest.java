@@ -1,5 +1,15 @@
 package madstodolist;
+import madstodolist.model.Tarea;
+import madstodolist.model.Usuario;
+import madstodolist.service.TareaService;
+import madstodolist.service.UsuarioService;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.jdbc.Sql;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.context.jdbc.Sql.ExecutionPhase.AFTER_TEST_METHOD;
 // imports
 
 @SpringBootTest
@@ -8,6 +18,8 @@ public class EquipoServiceTest {
 
     @Autowired
     EquipoService equipoService;
+
+
 
     // Añade dos equipos a la base de datos
     public void addEquiposBD() {

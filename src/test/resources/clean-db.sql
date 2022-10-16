@@ -4,3 +4,5 @@ DELETE FROM equipos;
 DELETE FROM usuarios;
 
 
+
+
